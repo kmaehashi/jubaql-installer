@@ -1,0 +1,26 @@
+############################################################
+# JubaQL Installer Configuration
+############################################################
+
+# Spark distribution directory
+SPARK_DIST="/home/jubatus/spark/spark-1.2.2-bin-hadoop2.4"
+
+# ZooKeeper hosts (only used in Production Mode)
+JUBAQL_ZOOKEEPER="127.0.0.1:2181"
+
+# IP address for the gateway to listen on
+JUBAQL_BIND_IP="127.0.0.1"
+
+# HDFS root directory for Jubatus-on-YARN
+JUBATUS_ON_YARN_HDFS_ROOT="/jubatus-on-yarn"
+
+# Build branches
+JUBAQL_SERVER_GIT_BRANCH="master"
+JUBAQL_CLIENT_GIT_BRANCH="master"
+JUBATUS_ON_YARN_GIT_BRANCH="master"
+
+# Version numbers
+SCALA_VERSION="2.10"
+JUBAQL_GATEWAY_VERSION="1.3.0"
+JUBAQL_PROCESSOR_VERSION="1.3.0"
+JUBATUS_ON_YARN_VERSION="1.1"
