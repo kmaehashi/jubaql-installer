@@ -32,10 +32,13 @@ $ wget "http://archive.apache.org/dist/spark/spark-1.2.2/spark-1.2.2-bin-hadoop2
 $ tar xf "spark-1.2.2-bin-hadoop2.4.tgz"
 ```
 
-**For Production Mode setup**, the following environment is needed:
+**For Development Mode setup**, [Jubatus](http://jubat.us/en/quickstart.html) servers must be installed and be available in PATH on the Gateway node.
 
-* Apache Hadoop (YARN/HDFS)
-* Apache Zookeeper
+**For Production Mode setup**, [Jubatus](http://jubat.us/en/quickstart.html) servers must be installed and be available in PATH on all YARN nodes.
+In addition, the following environment is needed.
+
+* Apache Hadoop (YARN/HDFS) cluster
+* Apache Zookeeper cluster
 
 If you are just trying Production Mode (in other words: not trying to build an actual "Production" environment), you can setup Hadoop and ZooKeeper using a pseudo-distributed (single-node) configuration.
 
